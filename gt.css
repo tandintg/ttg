@@ -1,0 +1,42 @@
+/* Sidebar Styling */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+/* Body Background Styling */
+body {
+    background-color: #A8B79F; /* Vintage dull green color */
+}

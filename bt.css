@@ -1,0 +1,106 @@
+/* Body styling */
+body {
+    background-color: #C97C6A; /* Vintage red background */
+    font-family: 'Arial', sans-serif;
+    color: #FFFFFF; /* White text for better contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    background-color: #333; /* Dark background for sidebar */
+    color: #fff;
+    padding-top: 20px;
+    position: fixed; /* Fixed position for sidebar */
+    height: 100vh; /* Full height */
+    top: 0;
+    left: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #575757; /* Hover effect */
+}
+
+/* Container to hold content */
+.container {
+    margin-left: 260px; /* To create space for the sidebar */
+    padding: 20px;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header styles */
+h1 {
+    font-size: 32px;
+    color: #1E1E1E; /* Dark color for the title */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Content section styling */
+.content-wrapper {
+    font-size: 18px;
+    color: #333; /* Dark text for readability */
+    line-height: 1.6; /* Line spacing for better readability */
+}
+
+/* Headings */
+h2, h3 {
+    color: #3A3A3A; /* Slightly lighter dark color for subheadings */
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Lists styling */
+ul {
+    list-style-type: square; /* Square bullets for lists */
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Links and hover effects */
+a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Make sidebar take full width on smaller screens */
+        height: auto;
+        position: relative;
+    }
+    .container {
+        margin-left: 0;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    .content-wrapper {
+        font-size: 16px;
+    }
+}

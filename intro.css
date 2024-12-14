@@ -1,0 +1,81 @@
+/* Container layout */
+.container {
+    display: flex;
+    flex-direction: row; /* Align sidebar and content side by side */
+    width: 100%; /* Full width */
+    min-height: 100vh; /* Ensure the content takes up the full screen height */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 220px; /* Sidebar width */
+    background-color: #f0b5b5; /* Soft vintage pink */
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px; /* Space between sidebar and content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    font-family: 'Times New Roman', serif; /* Classic font for a vintage feel */
+    font-size: 18px; /* Slightly larger font */
+}
+
+/* Sidebar links styling */
+.sidebar a {
+    display: block;
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+    font-size: 20px; /* Larger font for better readability */
+    margin: 10px 0; /* Space between links */
+    padding: 5px; /* Add padding for hover effect */
+}
+
+.sidebar a:hover {
+    color: #007bff; /* Optional: blue color on hover */
+    background-color: #f5e1e1; /* Subtle background change on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Content wrapper styling */
+.main-content {
+    flex-grow: 1; /* Take up the remaining space */
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Headings and paragraph styling */
+h1 {
+    font-family: 'Georgia', serif; /* Vintage serif font */
+    color: #333; /* Darker heading color */
+}
+
+p {
+    font-family: Arial, sans-serif; /* Simple sans-serif for readability */
+    line-height: 1.6; /* Better line spacing */
+    color: #555; /* Softer text color */
+    font-size: 16px; /* Standard font size */
+}
+
+/* Map iframe styling */
+iframe {
+    width: 100%; /* Responsive map width */
+    height: 400px; /* Set height */
+    border: none; /* Remove default border */
+    margin: 20px 0; /* Add space around map */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sidebar and content vertically */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width for sidebar */
+        margin-right: 0; /* Remove space */
+    }
+
+    .main-content {
+        margin-top: 20px; /* Space between sidebar and content */
+    }
+}

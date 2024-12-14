@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Arduino</title>
+    <link rel="stylesheet" href="gt.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <a href="intro to arduino.html">Introduction</a>
+        <a href="Know More.html">Know More</a>
+        <a href="AI in Bhutan.html">AI in Bhutan</a>
+        <a href="AI on Bhutan.html">Arduino in Bhutan</a>
+        <a href="gt.html">Getting Started</a>
+        <a href="About us.html">About Us</a>
+    </nav>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <h1>Getting Started with Arduino</h1>
+        <p>Arduino is an open-source platform that allows you to create interactive electronic projects. It consists of a microcontroller, sensors, actuators, and other components that you can program to perform various tasks. Whether you are a beginner or an experienced maker, getting started with Arduino is simple and fun!</p>
+
+        <h2 id="what-is-arduino">What is Arduino?</h2>
+        <p>Arduino is a platform used for building digital devices and interactive objects that can sense and control the physical world. It is used by artists, designers, engineers, and hobbyists to create a wide variety of projects.</p>
+
+        <h2 id="what-you-need">What You Need to Get Started</h2>
+        <ul>
+            <li><strong>Arduino Board:</strong> The most common boards for beginners are the Arduino Uno, Arduino Nano, and Arduino Mega.</li>
+            <li><strong>USB Cable:</strong> To connect your Arduino board to your computer.</li>
+            <li><strong>Arduino IDE:</strong> A software where you write and upload code to the Arduino board. You can download it from <a href="https://www.arduino.cc/en/software" target="_blank">here</a>.</li>
+            <li><strong>Components:</strong> Common components to begin with include LEDs, resistors, push buttons, sensors, and motors.</li>
+            <li><strong>Power Supply:</strong> Your Arduino can be powered through USB, but a battery or an external power supply may be needed for larger projects.</li>
+        </ul>
+
+        <h2 id="setting-up-arduino">Setting Up Your Arduino</h2>
+        <p>Follow these steps to set up your Arduino for the first time:</p>
+        <ol>
+            <li><strong>Download and Install the Arduino IDE:</strong> Visit the <a href="https://www.arduino.cc/en/software" target="_blank">official Arduino website</a> to download and install the IDE on your computer.</li>
+            <li><strong>Connect Your Arduino to Your Computer:</strong> Use the USB cable to connect your Arduino board to your computer.</li>
+            <li><strong>Select Your Board and Port:</strong> In the Arduino IDE, go to Tools > Board and select the correct Arduino model. Then, go to Tools > Port to select the appropriate port.</li>
+            <li><strong>Upload Your First Program:</strong> Start by uploading a simple "Blink" program that turns an LED on and off. You can find this example in the Arduino IDE under File > Examples > Basics > Blink.</li>
+        </ol>
+
+        <h2 id="basic-code">Basic Arduino Code Structure</h2>
+        <p>Arduino code has two main parts: <strong>setup()</strong> and <strong>loop()</strong>.</p>
+        <ul>
+            <li><strong>setup():</strong> This function runs once when the program starts. It’s used for initializing settings (like setting pin modes or serial communication).</li>
+            <li><strong>loop():</strong> This function runs continuously after setup. It is used to repeat actions or read sensors.</li>
+        </ul>
+        <p>Here’s an example of a simple Blink program:</p>
+        <pre>
+            void setup() {
+                pinMode(LED_BUILTIN, OUTPUT); // Set LED pin as output
+            }
+
+            void loop() {
+                digitalWrite(LED_BUILTIN, HIGH); // Turn LED on
+                delay(1000);                    // Wait for 1 second
+                digitalWrite(LED_BUILTIN, LOW);  // Turn LED off
+                delay(1000);                    // Wait for 1 second
+            }
+        </pre>
+
+        <h2 id="components">Common Components for Arduino Projects</h2>
+        <p>Here are a few components you can use to create a variety of Arduino projects:</p>
+        <ul>
+            <li><strong>LEDs:</strong> Light Emitting Diodes are commonly used in visual projects to display information.</li>
+            <li><strong>Resistors:</strong> These are used to limit the current flowing through components like LEDs to prevent damage.</li>
+            <li><strong>Servos:</strong> Small motors that are controlled by Arduino to create movements in your project.</li>
+            <li><strong>Ultrasonic Sensors:</strong> Used for measuring distances, perfect for projects like obstacle avoidance robots.</li>
+            <li><strong>Temperature and Humidity Sensors:</strong> Measure temperature and humidity, useful for environmental monitoring.</li>
+        </ul>
+
+        <h2 id="projects">Sample Projects to Try</h2>
+        <p>Here are some beginner-friendly projects to get started with Arduino:</p>
+        <ul>
+            <li><strong>Blinking LED:</strong> The first project most beginners do. Blink an LED on the Arduino board at intervals.</li>
+            <li><strong>Temperature Monitoring:</strong> Use a temperature sensor to monitor the temperature of your environment and display the reading on a serial monitor.</li>
+            <li><strong>Light-sensitive LED:</strong> Use a light sensor to turn on an LED when it gets dark.</li>
+            <li><strong>Motion Detector:</strong> Create a simple motion detection system using a PIR sensor and turn on an LED or a buzzer.</li>
+        </ul>
+
+        <h2 id="learn-more">Where to Learn More?</h2>
+        <p>Here are some excellent resources to deepen your knowledge of Arduino:</p>
+        <ul>
+            <li><a href="https://www.arduino.cc/en/Tutorial/HomePage" target="_blank">Arduino Tutorials</a> - A complete set of tutorials from the official Arduino website.</li>
+            <li><a href="https://www.instructables.com/id/Arduino-Tutorials/" target="_blank">Instructables Arduino Tutorials</a> - A collection of Arduino projects and guides for all skill levels.</li>
+            <li><a href="https://www.youtube.com/playlist?list=PLj2-qpIfB4C0I_fG5LOJbGmXg3bww5p9m" target="_blank">Arduino Basics YouTube Playlist</a> - A great video series to get you started.</li>
+        </ul>
+    </div>
+</body>
+</html>
